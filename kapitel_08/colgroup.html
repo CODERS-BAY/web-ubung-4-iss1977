@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabelle</title>
+  <style>
+    .jedi {
+      background: linear-gradient(to left, hsla(120, 100%, 25.1%, 0.4), hsla(240, 100%, 50%, 0.2))
+    }
+
+    .sith {
+      background: rgba(255, 0, 0, 0.5)
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Jedi und Sith</caption>
+    <colgroup>
+      <col>
+      <col span="2" class="jedi">
+      <col span="2" class="sith">
+    </colgroup>
+    <tr>
+      <td> </td>
+      <th scope="col">Qui-Gon Jinn</th>
+      <th scope="col">Obi-Wan Kenobi</th>
+      <th scope="col">Darth Sidious</th>
+      <th scope="col">Darth Vader</th>
+    </tr>
+    <tr>
+      <th scope="row">Beschreibung</th>
+      <td>Jedi-Meister des alten Ordens zur Zeit der Galaktischen Republik</td>
+      <td>Obi-Wan Kenobi, oder später Ben Kenobi, war ein Jedi-Meister des Alten Ordens,</td>
+      <td>Sheev Palpatine, auch bekannt unter seinem Sith-Namen Darth Sidious, war Senator des Planeten Naboo, Oberster Kanzler der Galaktischen Republik</td>
+      <td>Anakin Skywalker, später unter dem Namen Darth Vader bekannt, war der Sohn von Shmi Skywalker</td>
+    </tr>
+    <tr>
+      <th scope="row">Farbe Schwert</th>
+      <td>grün</td>
+      <td>blau</td>
+      <td>zwei Lichtschwerter mit roten Klingen</td>
+      <td>rot</td>
+    </tr>
+  </table>
+</body>
+
+</html>

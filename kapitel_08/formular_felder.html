@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <title>Formular</title>
+  </head>
+  <body>
+    <h1>Weitere Formularelemente</h1>
+    <form action="ausgabe.html" method="get">
+      <p>
+        <label for="suche">Suche</label>
+        <input type="search" name="suche" id="suche" autofocus>
+      </p>
+      <hr>
+      <p>
+        <label for="teilnehmer">Anzahl Teilnehmer</label>
+        <input type="number" min="5" max="35" step="5" name="teilnehmer" id="teilnehmer" required>
+      </p>
+      <p>
+        <label for="datum">Veranstaltungsdatum</label>
+        <input type="date" name="datum" id="datum">
+      </p>
+      <p>
+        <label for="farbe">Lieblingsfarbe</label>
+        <input type="color" name="color" id="farbe">
+      </p>
+      <p>
+        <label for="grad">Schwierigkeitsgrad</label>
+        <input type="range" name="grad" id="grad">
+      </p>
+      <hr>
+      <p>
+        <label for="website">Website </label>
+        <input type="url" name="website" id="website">
+      </p>
+      <p>
+        <label for="telefon">Telefon</label>
+        <input type="tel" name="telefon" id="telefon">
+      </p>
+      <hr>
+      <p>
+        <label for="interessen">Interessen</label>
+          <input type="text" list="intliste" name="interesseb" id="interessen">
+          <datalist id="intliste">
+            <option value="Hirschmaus">
+            <option value="Taschenratte">
+            <option value="Flughund">
+          </datalist>
+      </p>
+      <hr>
+      <p>
+      <input type="submit" value="Senden">
+      </p>
+    </form>
+  </body>
+</html>

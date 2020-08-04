@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulare</title>
+</head>
+<body>
+  <form method="get" action="ausgabe.html">
+    <fieldset>
+      <legend>Mehr Elemente</legend>
+      <div>
+        <input type="radio" name="zahlen" id="bar" value="bar">
+        <label for="bar">Bar</label>
+        <input type="radio" name="zahlen" id="kreditkarte" value="kreditkarte">
+        <label for="kreditkarte">Kreditkarte</label>
+        <input type="radio" name="zahlen" id="heutenicht" value="heutenicht">
+        <label for="heutenicht">heute nicht</label>
+      </div>
+      <div>
+        <label for="vorname">Vorname</label>
+        <input type="text" name="vorname" id="vorname">
+      </div>
+      <div>
+        <label for="emailadresse">E-Mail</label>
+        <input type="email" name="emailadresse" id="emailadresse">
+      </div>
+      <div>
+        <label for="passwort">Passwort</label>
+        <input type="password" name="passwort" id="passwort">
+      </div>
+      <div>
+        <input type="checkbox" name="info" value="ja" id="info">
+        <label for="info">Infomaterial anfordern</label>
+      </div>
+      <div>
+        <label for="lieblingstier">Lieblingstier</label>
+        <select name="lieblingstier" id="lieblingstier">
+	         <option value="1">Erdmännchen</option>
+	         <option value="2">Grottenolm</option>
+	         <option value="3">Spiegeleiqualle</option>
+	         <option value="4">Seeschwalbe</option>
+	      </select>
+      </div>
+      <div>
+        <label for="kommentar">Kommentar</label>
+        <textarea rows="5" cols="20" name="kommentar" id="kommentar"></textarea>
+      </div>
+      <input type="submit">
+    </fieldset>
+  </form>
+</body>
+</html>
