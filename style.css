@@ -1,0 +1,101 @@
+/*Generall styling */
+html{
+  box-sizing: border-box;
+    
+}
+
+body{
+    font-size: 120%;
+    width:80%;
+    margin: auto;
+}
+
+/*Nav styling*/
+nav {
+    background-color: rgb(228, 228, 228);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+
+.activ {
+    color: white;
+    border: 1px solid black;
+    background-color: lightslategray;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/*Formatting Willkommen Page title*/
+
+.seite1-title{
+    display: flex;
+    width: 100%;
+}
+
+.seite1-title img, .seite1-title h2{
+    flex-shrink : 1;
+}
+
+/*Formatting Wilkommen Page */
+
+/* Description List headers*/
+
+.box {
+    border: darkgray 1px solid;
+    margin: 40px 0px;
+    background: rgb(218, 218, 218);
+    background:  radial-gradient(circle, rgba(218, 218, 218, 1) 0%, rgba(199, 199, 199, 1) 40%, rgba(255, 255, 255, 1) 100%);
+
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.39);
+
+    /*background: url("img/buch.svg") no-repeat left top, linear-gradient(#eb01a5, #d13531);*/
+
+    /*background: url("img/buch.svg") no-repeat ;*/
+   
+}
+
+
+main dl dt {
+    background: rgb(0, 105, 27);
+    background: linear-gradient(90deg, rgba(0, 105, 27, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+}
+
+main dl dt img {
+    width: 3.5rem;
+    margin: 10px;
+}
+
+main dl dt h3 {
+    font-size: 1.5rem;
+}
+
+main dl dd p {
+    margin-right: 20px;
+}
