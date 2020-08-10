@@ -4,29 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- include Bootstrap’s compiled CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/a8a0d21732.js"></script>
+
+    <!-- Import Font Awesome  -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <title>Übung 4</title>
 </head>
 
 <body>
-    <header>
-        <h1>Web Übung 4 - unsere Tiere</h1>
-        <nav>
-            <ul>
-                <li class="activ"><a href="index.html">Home</a></li>
-                <li><a href="infoseite.html">Infoseite</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html"><img src="./img/Logo.svg" alt="My Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">WILLKOMMEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./info-seite.html">ZOO INFO-SEITE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header>
+    </section>
+
 
     <main>
-        <div class="seite1-title">
-            <img src="img/page_devider.svg" alt="">
-        <h2>Unsere Tierarten</h2>
-        <img src="img/page_devider.svg" alt="">
-    </div>
+        <!----------------------------------- BANNER SECTION ------------------------------------------------------->
+        <section id="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="promo-title">Zoo und seine Bewohner</p>
+                        <p>ie Leckerei wird in einem 10-Liter-Kunststoff-Einwegbehälter aus Weintrauben, in Würfel
+                            geschnittenen Äpfel, Pflaumen und Birnen sowie Honig und etwas Wasser zubereitet. Das ganze
+                            wird eingefroren und danach der Behälter aufgeschnitten und der leckere Eisblock serviert.
+                            An heißen Tagen fressen die Tiere im Zoo mehr Obst und Gemüse, wobei auch ihr Wasser drei
+                            Mal am Tag ausgewechselt wird, damit es erfrischend ist.
+                        </p>
+                       
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./img/frosh.png" alt="">
+                    </div>
+                </div>
+            </div>
 
+        </section>
+
+        <!---------------------------------------- VIDEO SECTION ------------------------------------------------->
+
+        <section id="willkommen-video">
+            <h2>Unsere Tiere haben freude im Zoo</h2>
+            <div id="video-youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EeQiSZ978Ys" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+
+
+        
         <dl title="Definitionsliste - unsere Tiere">
             <div class="box">
                 <dt>
@@ -54,7 +109,7 @@
                 </dd>
             </div>
             <div class="box">
-                
+
                 <dt>
                     <img src="./img/Insekten.svg" alt="Insekten">
                     <h3>Insekten</h3>
@@ -113,7 +168,6 @@
                 </dd>
             </div>
         </dl>
-
     </main>
 
 
