@@ -284,7 +284,8 @@ main dl dd p {
 
 #contact-section{
     background: lightgrey;
-}
+    padding-bottom: 1px; /*um collapsing margins zu vermeiden*/
+ }
 
 .contact-section-title{
     display: flex;
@@ -301,16 +302,39 @@ main dl dd p {
 }
 .kontakt-formular{
     width: 80%;
+    max-width: 1300px;
    
     background-color: white;
     margin: auto;
-    margin-bottom: 13vh;
+    padding: 30px;
+    margin-bottom: 5vh;
     border: 3px darkgray solid;
     box-shadow: 10px 10px 5px 0px rgba(148,148,148,1);
-    padding: 50px;
+    /*padding-top: 30px;*/
+    /*padding-bottom: 10px;*/
 }
 
-.flex-progressbar-formatting{
+.flex-progressbar-formatting{ /* Text über den Progressbar wird hier eingestellt*/
     display: flex;
     justify-content: space-between;
+}
+
+/* Formatting spacing betwwen footer paragraths*/
+.footer-col1 i, .footer-col1 p{
+    margin:0;
+}
+.footer-col2 i, .footer-col2 p{
+    margin:0;
+}
+/* ------------------------------------------------*/
+
+.footer .container :nth-child(2) a{
+    text-decoration: none;
+    color:black;
+}
+
+/*Setting underline on h4 in footer*/
+.footer h4{
+    border-bottom: 2px black solid;
+    display: inline-block;
 }
